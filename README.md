@@ -16,24 +16,19 @@ Stock partition images for the **OnePlus 11 (CPH2447)**, build
 
 ## Files
 
-All images are attached to the GitHub Release on this repo (see
-Releases), because files over 100 MB cannot live in the repo itself.
-Download links for every image, with sizes and SHA-256 hashes, are in
-the release notes.
+All 47 partition images live in this repo, in the root directory:
 
-## Split files
+- Files under 100 MB are normal git files.
+- Files over 100 MB (`boot.img`, `vendor_boot.img`, `modem.img`,
+  `recovery.img`, `vendor_dlkm.img`, `system.img`, `system_ext.img`,
+  `vendor.img`, `odm.img`, `my_product.img`, `my_stock.img`) are
+  stored with Git LFS. To clone them, install Git LFS first
+  (`git lfs install`), then clone normally; or download any single
+  file from its raw link on GitHub.
 
-`my_product.img` (2.7 GB) and `my_stock.img` (2.9 GB) are larger
-than GitHub's 2 GB per-asset limit, so each is split into two parts
-under 2 GB (`.part1`, `.part2`). Rejoin them in order before use:
-
-```
-cat my_product.img.part1 my_product.img.part2 > my_product.img
-cat my_stock.img.part1 my_stock.img.part2 > my_stock.img
-```
-
-After rejoining, verify the SHA-256 against the hash in the release
-notes before flashing.
+`MANIFEST.md` in this repo lists every file with its exact byte size
+and SHA-256 hash. Verify a downloaded file with
+`sha256sum <file>` before flashing.
 
 ## Source
 
