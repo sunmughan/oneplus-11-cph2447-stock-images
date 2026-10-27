@@ -1,6 +1,6 @@
 # Stock image manifest — OnePlus 11 CPH2447, build CPH2447_16.0.5.1301
 
-Every file was extracted from the official CPH2447_16.0.5.1301 `payload.bin` with per-operation SHA-256 checks and a final partition SHA-256 verified against the OTA manifest. Verify a downloaded file with `sha256sum <file>` before flashing.
+Every file was extracted from the official CPH2447_16.0.5.1301 `payload.bin` with per-operation SHA-256 checks and a final partition SHA-256 verified against the OTA manifest. Verify a downloaded file with `sha256sum <file>` before flashing. Note: `my_product.img` and `my_stock.img` are stored in the repo as `.part1`/`.part2` splits (GitHub's 2 GiB per-object limit); the hashes below are for the rejoined files.
 
 | Partition | File | Size (bytes) | SHA-256 |
 |---|---|---|---|

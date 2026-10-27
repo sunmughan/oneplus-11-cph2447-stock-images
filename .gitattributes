@@ -9,3 +9,7 @@ vendor.img filter=lfs diff=lfs merge=lfs -text
 odm.img filter=lfs diff=lfs merge=lfs -text
 my_product.img filter=lfs diff=lfs merge=lfs -text
 my_stock.img filter=lfs diff=lfs merge=lfs -text
+my_stock.img.part2 filter=lfs diff=lfs merge=lfs -text
+my_product.img.part1 filter=lfs diff=lfs merge=lfs -text
+my_product.img.part2 filter=lfs diff=lfs merge=lfs -text
+my_stock.img.part1 filter=lfs diff=lfs merge=lfs -text
